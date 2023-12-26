@@ -1,0 +1,143 @@
+.header {
+    position: relative;
+
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+
+    background-color: #2424247f;
+}
+
+/* video */
+
+.video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    position: absolute;
+    top: 10%;
+    z-index: -1;
+}
+
+.logo {
+    position: absolute;
+    top: -2px;
+    left: 11.2%;
+
+    box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.3);
+}
+
+.logo a img {
+    width: 100px;
+    height: 100px;
+}
+
+/* navbars */
+
+.top-navbar {
+    display: flex;
+    align-items: center;
+
+    height: 45px;
+
+    background-color: #1E5691;
+}
+
+.top-navbar .navbar {
+    display: flex;
+
+    position: absolute;
+    right: 18%;
+
+    align-items: center;
+    gap: 45px;
+}
+
+.top-navbar .navbar a {
+    font-size: 0.9em;
+    font-weight: 400;
+
+    color: white;
+    text-decoration: none;
+}
+
+.top-navbar .navbar a:hover {
+    text-decoration: underline;
+}
+
+.top-navbar .navbar a:active {
+    text-decoration: none;
+    color: #242424;
+}
+
+
+.low-navbar {
+    display: flex;
+    align-items: center;
+
+    height: 70px;
+
+    background-color: #ffffff;
+}
+
+.low-navbar .navbar {
+    display: flex;
+
+    position: absolute;
+    left: 20%;
+    gap: 15px;
+
+    align-items: center;
+}
+
+.low-navbar .navbar a {
+    font-size: 0.9em;
+    font-weight: 400;
+
+    color: #242424;
+    text-decoration: none;
+
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    text-align: center;
+}
+.low-navbar .navbar .animation{
+    position: absolute;
+	height: 100%;
+	height: 2px;
+	bottom: -10px;
+	z-index: 0;
+	background: #1E5691;
+	border-radius: 8px;
+	transition: all .5s ease 0s;
+}
+.low-navbar .navbar a:nth-child(1){
+	width: 100px;
+}
+.low-navbar .navbar .start-home, a:nth-child(1):hover~.animation{
+	width: 100px;
+	left: 0;
+}
+.low-navbar .navbar a:nth-child(2){
+	width: 110px;
+}
+.low-navbar a:nth-child(2):hover~.animation{
+	width: 110px;
+	left: 115px;
+}
+.low-navbar .navbar a:nth-child(3){
+	width: 100px;
+}
+.low-navbar .navbar a:nth-child(3):hover~.animation{
+	width: 100px;
+	left: 239px;
+}
+.low-navbar .navbar a:nth-child(4){
+	width: 100px;
+}
+.low-navbar .navbar a:nth-child(4):hover~.animation{
+	width: 100px;
+	left: 354px;
+}
