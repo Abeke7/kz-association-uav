@@ -14,7 +14,9 @@ export default function header() {
     return (
         <div className='header'>
 
+
             {/* background-video */}
+
             <video className='video'
                 src={videobg}
                 autoPlay
@@ -23,23 +25,27 @@ export default function header() {
             />
 
             <div className='main-title'>
-                Казахстанская Ассоциация
+                КАЗАХСТАНСКАЯ АССОЦИАЦИЯ
                 <br />
                 БПЛА
             </div>
 
+
             {/* mouse icon */}
+
             <a href='#' className='mouse-link'>
                 <span className="mouse-icon material-symbols-outlined">
                     mouse
                 </span>
             </a>
 
+
             {/* partners */}
+
             <div className='partners'>
                 <a href='https://thpc.edu.kz/'>
                     <img src={picture5} height="70px" />
-                    <p>Талдыкурганский политехнический колледж</p>
+                    <p>Талдыкорганский политехнический колледж</p>
                 </a>
                 <a href='#'>
                     <img src={picture4} height="45px" />
@@ -65,23 +71,18 @@ export default function header() {
                 </a>
             </div>
 
+
             {/* navbar */}
+
             <div className='logo'>
                 <a>
                     <img src={logo} />
                 </a>
             </div>
-            <div className='top-navbar'>
-                <div className='navbar'>
-                    <a href='#'>О нас</a>
-                    <a href='#'>Новости</a>
-                    <a href='#'>Контакты</a>
-                </div>
-            </div>
             <div className='low-navbar'>
-                <div className='navbar'>
+                <div className='nav'>
                     <a href='#'>Главная</a>
-                    <a href='#'>Мероприятия</a>
+                    <a href='#'>Новости</a>
                     <a href='#'>Дроны</a>
                     <div class="animation start-home"></div>
                 </div>
