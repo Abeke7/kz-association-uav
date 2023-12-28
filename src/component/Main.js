@@ -3,44 +3,47 @@ import './Main.css'
 
 // components
 import Header from './Header.js';
+import News from './News.js';
 
-// assets
-import news1 from '../assets/news-1.png'
-import pdf1 from '../assets/pdf1.pdf'
+
+
 
 export default function Main() {
     return (
         <div className='main'>
-            <div className='secrion'><Header /></div>
-            <div className='secrion'>
+            <div className='section-1'><Header /></div>
+            <div className='section-2'><News /></div>
 
-                <div className='news'>
 
-                    <div className='main-title'>
-                        НОВОСТИ
+
+            <div className='section-3'>
+                <div className='footer'>
+                    <div className='section'>
+                        <div className='logo'>
+                            <img src='#' />
+                            КАЗАХСТАНСКАЯ АССОЦИАЦИЯ БПЛА
+                        </div>
+                        <div className='navbar'>
+                            
+                        </div>
                     </div>
 
-                    <div className='container-box'>
-                        <a href={pdf1} className='container'>
-                            <img src={news1}/>
-                            <p>
-                                12/27/2023
-                                <br />
-                                Новый партнер в лице ТОО HQL ЖШС
-                            </p>
-                        </a>
-                        <div className='container'>1</div>
-                        <div className='container'>1</div>
-                        <div className='container'>1</div>
-                        <div className='container'>1</div>
-                        <div className='container'>1</div>
-                        <div className='container'>1</div>
-                        <div className='container'>1</div>
+
+                    <div className='navbar'>
+                        <ul>
+                            <li></li>
+                            <li><a href='#'></a></li>
+                            <li><a href='#'></a></li>
+                            <li><a href='#'></a></li>
+                            <li><a href='#'></a></li>
+                        </ul>
                     </div>
                 </div>
-
             </div>
-            <div className='secrion'></div>
+
+
+
+            <div className='section-4'></div>
         </div>
     );
 }

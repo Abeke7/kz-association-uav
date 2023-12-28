@@ -3,7 +3,6 @@ import './Header.css';
 
 // samples
 import videobg from '../assets/video.mp4'
-import logo from '../logo.svg';
 import picture1 from '../assets/Academy of Civil Aviation.png'
 import picture2 from '../assets/AgroDrone.png'
 import picture3 from '../assets/Ministry of Transport and Communications.png'
@@ -45,7 +44,7 @@ export default function header() {
             <div className='partners'>
                 <a href='https://thpc.edu.kz/'>
                     <img src={picture5} height="70px" />
-                    <p>Талдыкорганский политехнический колледж</p>
+                    <p>Толдыкорганский политехнический колледж</p>
                 </a>
                 <a href='#'>
                     <img src={picture4} height="45px" />
@@ -69,23 +68,6 @@ export default function header() {
                     <img src={picture3} height="60px" />
                     <p>Комитет гражданской авиации</p>
                 </a>
-            </div>
-
-
-            {/* navbar */}
-
-            <div className='logo'>
-                <a>
-                    <img src={logo} />
-                </a>
-            </div>
-            <div className='low-navbar'>
-                <div className='nav'>
-                    <a href='#'>Главная</a>
-                    <a href='#'>Новости</a>
-                    <a href='#'>Дроны</a>
-                    <div class="animation start-home"></div>
-                </div>
             </div>
         </div>
     )

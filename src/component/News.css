@@ -1,0 +1,284 @@
+.section-2{
+    background: linear-gradient(to right, white 62%, #719CC8 38%);
+    z-index: -2;
+}
+
+.news {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120vh;
+
+}
+
+.news .main-title {
+    position: absolute;
+    top: 12%;
+    left: 10.5%;
+
+    font-family: 'Roboto Slab', serif;
+
+    font-size: 1.5em;
+    font-weight: 600;
+    line-height: 38px;
+    text-align: center;
+
+    color: #242424;
+}
+
+.news .container {
+    position: absolute;
+    top: 18%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Grid_Horizontal */
+
+
+.news .container .grid-horizontal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 660px;
+}
+
+.news .container .grid-horizontal .item-post {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.news .container .grid-horizontal .item-post .article-image {
+    display: flex;
+    min-height: 300px;
+}
+
+.news .container .grid-horizontal .item-post .article-wrapper {
+    position: relative;
+    min-height: 300px;
+    width: 300px;
+}
+
+.news .container .grid-horizontal .item-post .blue {
+    background-color: #1E5691;
+}
+
+.news .container .grid-horizontal .item-post .white {
+    background-color: white;
+}
+
+.news .container .grid-horizontal .item-post .article-wrapper .date {
+    position: absolute;
+    color: #AAAAB1;
+    font-size: 0.9em;
+}
+
+.news .container .grid-horizontal .item-post .white .title {
+    position: absolute;
+
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.2em;
+    color: #242424;
+}
+
+.news .container .grid-horizontal .item-post .white .read-more {
+    position: absolute;
+
+    display: flex;
+    align-items: center;
+
+    text-decoration: none;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.1em;
+    color: #242424;
+}
+
+.news .container .grid-horizontal .item-post .blue .title {
+    position: absolute;
+
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.2em;
+    color: white;
+}
+
+.news .container .grid-horizontal .item-post .blue .read-more {
+    position: absolute;
+
+    display: flex;
+    align-items: center;
+
+    text-decoration: none;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.1em;
+    color: white;
+
+    top: 25%;
+}
+
+.news .container .grid-horizontal .item-post .article-wrapper .date,
+.title,
+.read-more {
+    left: 10%;
+    max-width: 232px;
+}
+
+.news .container .grid-horizontal .item-post .article-wrapper .date {
+    margin-top: 15%;
+}
+
+.news .container .grid-horizontal .item-post .article-wrapper .title {
+    margin-top: 25%;
+}
+
+.news .container .grid-horizontal .item-post .article-wrapper .read-more {
+    margin-top: 50%;
+}
+
+
+/* Grid_Vertical */
+
+
+.news .container .grid-vertical {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.news .container .grid-vertical .item-post,
+.item-feature {
+    min-height: 600px;
+}
+
+.news .container .grid-vertical .item-post .article-image {
+    display: flex;
+    min-height: 300px;
+}
+
+.news .container .grid-vertical .item-post .article-wrapper {
+    position: relative;
+    min-height: 300px;
+    width: 300px;
+}
+
+.news .container .grid-vertical .item-post .white {
+    background-color: white;
+}
+
+.news .container .grid-vertical .item-post .article-wrapper .date {
+    position: absolute;
+    color: #AAAAB1;
+    font-size: 0.9em;
+}
+
+.news .container .grid-vertical .item-post .article-wrapper .title {
+    position: absolute;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.2em;
+    color: #242424;
+}
+
+.news .container .grid-vertical .item-post .article-wrapper .read-more {
+    position: absolute;
+
+    display: flex;
+    align-items: center;
+
+    text-decoration: none;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.1em;
+    color: #242424;
+}
+
+.news .container .grid-vertical .item-post .article-wrapper .date,
+.title,
+.read-more {
+    left: 10%;
+    max-width: 232px;
+}
+
+.news .container .grid-vertical .item-post .article-wrapper .date {
+    margin-top: 15%;
+}
+
+.news .container .grid-vertical .item-post .article-wrapper .title {
+    margin-top: 25%;
+}
+
+.news .container .grid-vertical .item-post .article-wrapper .read-more {
+    margin-top: 42%;
+}
+
+
+/* Item-Feature */
+
+
+.news .container .grid-vertical .item-feature {
+    min-height: 600px;
+}
+
+.news .container .grid-vertical .item-feature .article-image {
+    position: relative;
+    display: flex;
+    min-height: 600px;
+}
+
+.news .container .grid-vertical .item-feature .article-image img{
+    filter: brightness(40%);
+    object-fit: cover;
+}
+
+.news .container .grid-vertical .item-feature .article-image .date {
+    position: absolute;
+    color: #AAAAB1;
+    font-size: 0.9em;
+}
+
+.news .container .grid-vertical .item-feature .article-image .title {
+    position: absolute;
+
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.2em;
+    color: white;
+}
+
+.news .container .grid-vertical .item-feature .article-image .read-more {
+    position: absolute;
+
+    display: flex;
+    align-items: center;
+
+    text-decoration: none;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.1em;
+    color: white;
+}
+
+.news .container .grid-vertical .item-feature .article-image .date,
+.title,
+.read-more {
+    left: 10%;
+    max-width: 200px;
+}
+
+.news .container .grid-vertical .item-feature .article-image .date {
+    bottom: 0;
+    margin-bottom: 51%;
+}
+
+.news .container .grid-vertical .item-feature .article-image .title {
+    bottom: 0;
+    margin-bottom: 32%;
+}
+
+.news .container .grid-vertical .item-feature .article-image .read-more {
+    bottom: 0;
+    margin-bottom: 20%;
+}
