@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useRef } from 'react';
 import './Header.css';
 
 // samples
@@ -9,19 +9,27 @@ import picture3 from '../assets/Ministry of Transport and Communications.png'
 import picture4 from '../assets/ScTech.png'
 import picture5 from '../assets/Taldykurgan Polytechnic College.png'
 
-export default function header() {
-    return (
-        <div className='header'>
+export default function Header() {
+    const [scrollPosition, setScrollPosition] = useState(0);
+    const headerRef = useRef();
 
+    const handleScroll = () => {
+        const newPosition = headerRef.current.getBoundingClientRect().bottom;
+        setScrollPosition(newPosition);
+    };
+
+    const scrollToNextSection = () => {
+        window.scrollTo({
+            top: scrollPosition + window.innerHeight,
+            behavior: 'smooth',
+        });
+    };
+
+    return (
+        <div className='header' ref={headerRef} onScroll={handleScroll}>
 
             {/* background-video */}
-
-            <video className='video'
-                src={videobg}
-                autoPlay
-                loop
-                muted
-            />
+            <video className='video' src={videobg} autoPlay loop muted />
 
             <div className='main-title'>
                 КАЗАХСТАНСКАЯ АССОЦИАЦИЯ
@@ -29,18 +37,15 @@ export default function header() {
                 БПЛА
             </div>
 
-
             {/* mouse icon */}
-
-            <a href='#' className='mouse-link'>
+            {/* КНОПКА ДЛЯ ПРОКРУТКИ */}
+            <a href='#' className='mouse-link' onClick={scrollToNextSection}>
                 <span className="mouse-icon material-symbols-outlined">
                     mouse
                 </span>
             </a>
 
-
             {/* partners */}
-
             <div className='partners'>
                 <a href='https://thpc.edu.kz/'>
                     <img src={picture5} height="70px" />
@@ -70,5 +75,5 @@ export default function header() {
                 </a>
             </div>
         </div>
-    )
+    );
 }

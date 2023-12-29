@@ -50,7 +50,7 @@ export default function Main() {
                                 </span>
                             </div>
                         </div>
-                        <div className='list'>
+                        <div className='list-links'>
                             <ul>
                                 <li><span class="material-symbols-outlined">phone_in_talk</span><CopyTextComponent text="+00000000000" /></li>
                                 <li>
@@ -66,21 +66,40 @@ export default function Main() {
                     <div className='section'>
                         <div className='list'>
                             <ul>
-                                <li></li>
+                                <li className='title'>БЫСТРЫЕ ССЫЛКИ</li>
                                 <li>
-                                    <a href='#'></a>
+                                    <a href='#'>Главная</a>
                                 </li>
                                 <li>
-                                    <a href='#'></a>
+                                    <a href='#'>О нас</a>
                                 </li>
                                 <li>
-                                    <a href='#'></a>
+                                    <a href='#'>Образовательная платформа</a>
                                 </li>
                                 <li>
-                                    <a href='#'></a>
+                                    <a href='#'>Дроны</a>
                                 </li>
                             </ul>
                         </div>
+                        <form className='form-box'>
+                            <div className='title'>
+                                <h2>РАССЫЛКА</h2>
+                                <p>
+                                    Получайте последние новости на свой
+                                    <br />
+                                    почтовый ящик
+                                </p>
+                            </div>
+                            <div className='form'>
+                                <label>
+                                    <input
+                                        type="text"
+                                        placeholder='Your email here'
+                                    />
+                                </label>
+                                <button type="submit"><span class="material-symbols-outlined">send</span></button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>

@@ -15,7 +15,7 @@ export default function News() {
             </div>
             <div className='container'>
                 <div className='grid-horizontal'>
-                    <div className='item-post'>
+                    <div className='item-post reverse'>
                         <div className='article-image'>
                             <img src={img1} height='300px' width='300px' />
                         </div>
