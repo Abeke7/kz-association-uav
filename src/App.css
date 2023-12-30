@@ -7,3 +7,10 @@
 .App{
   font-family: 'Roboto', sans-serif;
 }
+
+.loader-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
